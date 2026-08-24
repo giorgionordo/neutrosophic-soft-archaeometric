@@ -55,6 +55,12 @@ pass for E001-E015. E001-E012 were checked against Lombardi and Vidale 1998
 pass. E016-E019 were checked against Calcagnile et al. 2010; E020-E030 were
 checked against Quarta, Calcagnile and Vidale 2012.
 
+`data/validation/e031_e045_source_audit.csv` records the third source audit
+pass. E031-E032 were checked against Quarta, Calcagnile and Vidale 2012;
+E033-E042 were checked against Jones et al. 2016; E043-E045 were checked
+against the Angelini et al. Getty abstract and are therefore marked
+`SOURCE-CHECKED-ABSTRACT-ONLY`.
+
 The validation file is intentionally separate from the historical workbook so
 the original dataset versions remain intact.
 

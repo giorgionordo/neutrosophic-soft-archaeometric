@@ -21,3 +21,5 @@
 - Added `data/examples/delphi_refinement_template.csv` and tests covering the
   new schema, DAG parsing, genealogic discounting, full pipeline outputs, and
   Monte Carlo confidence tables.
+- Added source validation notes for E031-E045 against the S03, S04 and S05
+  PDFs, including explicit abstract-only status for E043-E045.
