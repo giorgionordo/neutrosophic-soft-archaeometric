@@ -44,6 +44,19 @@ python scripts/verify_results.py --latex "C:\Users\Giorgio\Desktop\neutrosophic_
 python -m unittest discover -s tests
 ```
 
+Generate the manuscript figures from the canonical CSV outputs:
+
+```powershell
+python scripts/generate_figures.py
+```
+
+The generated vector PDFs are written to `figures/`:
+
+- `ivn_h21_h33_profile.pdf` reports the H21/H33 interval-valued
+  neutrosophic profile.
+- `h21_h33_weight_sensitivity.pdf` reports the H21/H33 net midpoint under
+  the domain-weight sensitivity scenarios.
+
 ## Validation Notes
 
 `data/validation/e001_e015_source_audit.csv` records the first source audit

@@ -25,3 +25,5 @@
   PDFs, including explicit abstract-only status for E043-E045.
 - Added source validation notes for E046-E062 against the S02, S04, S05, S06
   and S07 PDFs, completing the staged audit of all 62 evidence records.
+- Added `scripts/generate_figures.py` and reproducible vector PDF figures for
+  the H21/H33 IVN profile and weight-sensitivity comparison.
