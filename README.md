@@ -98,6 +98,14 @@ Calcagnile et al. 2010.
 The validation file is intentionally separate from the historical workbook so
 the original dataset versions remain intact.
 
+## Material Accession and V10 Source Triage
+
+The manuscript-level folder `C:\Users\Giorgio\Desktop\neutrosophic_archaeometric\materiale` stores locally recovered PDFs, HTML records, and download manifests. Large or copyrighted source PDFs are not versioned in this repository.
+
+`data/validation/v10_source_material_triage.csv` records the conservative bridge from the local material folder to the next possible dataset expansion. It identifies which sources are already active in the 62-evidence canonical matrix, which newly downloaded files can support further page-level audit, and which records remain bibliographic/manual recovery targets only.
+
+The v10 triage does not change the canonical 62 evidence records or 112 active links. It is a staging file for future source-checked additions, especially patina chemistry, restoration history, and carefully separated geological measurement versus historical synthesis.
+
 ## Experimental Refinements
 
 `src/riace_ivn/experimental_refinements.py` contains optional, non-baseline
@@ -129,3 +137,4 @@ experiments can be developed without changing the paper's current baseline.
 By default, the experimental aggregation ranks only DIRECTIONAL rows; CONTEXT
 and LIMITATION rows remain visible in the evidence-level export and can be
 included explicitly with `--include-nondirectional`.
+

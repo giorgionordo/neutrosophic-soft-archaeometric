@@ -47,6 +47,17 @@ class DatasetIntegrityTest(unittest.TestCase):
         self.assertEqual(len(rows) - 1, 17)
         self.assertTrue(any("SOURCE-CHECKED-ABSTRACT-ONLY" in row for row in rows))
 
+    def test_v10_source_material_triage_present(self):
+        triage = ROOT / "data" / "validation" / "v10_source_material_triage.csv"
+        self.assertTrue(triage.exists())
+        rows = triage.read_text(encoding="utf-8-sig").splitlines()
+        self.assertGreaterEqual(len(rows) - 1, 10)
+        body = "\n".join(rows[1:])
+        for source_id in ["S01", "S02", "S03", "S04", "S05", "S06", "S07"]:
+            self.assertIn(source_id, body)
+        self.assertIn("M-GETTY-GUIDELINES", body)
+        self.assertIn("DOWNLOADED-VERIFIED-PDF", body)
 
 if __name__ == "__main__":
     unittest.main()
+

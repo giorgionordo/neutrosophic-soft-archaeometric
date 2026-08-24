@@ -58,3 +58,7 @@ edited manually.
 These files support future Delphi, lineage-discounting, entropy-weighting,
 IVN TOPSIS and Monte Carlo experiments. They do not alter the baseline V7/V9
 results reported in Paper I.
+
+## V10 Source-Material Triage
+
+- `data/validation/v10_source_material_triage.csv` maps the locally recovered `materiale/` sources to conservative next-step dataset actions. It is intentionally non-canonical and does not alter the 62 evidence records or 112 active links used in the current manuscript results.

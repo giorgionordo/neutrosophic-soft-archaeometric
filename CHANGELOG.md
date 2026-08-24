@@ -2,6 +2,8 @@
 
 ## 2026-08-24
 
+- Added a v10 source-material triage file linking the recovered materiale/ PDFs and HTML records to conservative next-step dataset actions without changing the canonical 62/112 baseline.
+
 - Audited the local manuscript and v9 workbook alignment.
 - Confirmed the canonical workbook contains 62 evidence records and 112 active
   evidence-hypothesis links.
@@ -30,3 +32,4 @@
 - Added `reproduce.ps1` as a one-command verification and figure-copy workflow.
 - Added `SUPPLEMENTARY_MATERIALS.md` to index canonical data, validation
   audits, generated figures and non-baseline experimental files.
+
