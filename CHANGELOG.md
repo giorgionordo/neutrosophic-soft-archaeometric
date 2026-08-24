@@ -2,6 +2,8 @@
 
 ## 2026-08-24
 
+- Added an S06 patina page-level audit and non-canonical E063-E066 candidate evidence rows for later scoring.
+
 - Added a v10 source-material triage file linking the recovered materiale/ PDFs and HTML records to conservative next-step dataset actions without changing the canonical 62/112 baseline.
 
 - Audited the local manuscript and v9 workbook alignment.

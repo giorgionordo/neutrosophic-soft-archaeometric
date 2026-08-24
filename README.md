@@ -105,6 +105,12 @@ The manuscript-level folder `C:\Users\Giorgio\Desktop\neutrosophic_archaeometric
 `data/validation/v10_source_material_triage.csv` records the conservative bridge from the local material folder to the next possible dataset expansion. It identifies which sources are already active in the 62-evidence canonical matrix, which newly downloaded files can support further page-level audit, and which records remain bibliographic/manual recovery targets only.
 
 The v10 triage does not change the canonical 62 evidence records or 112 active links. It is a staging file for future source-checked additions, especially patina chemistry, restoration history, and carefully separated geological measurement versus historical synthesis.
+The S06 patina audit is split into two non-canonical validation files:
+
+- `data/validation/s06_patina_page_audit.csv` records page-level checks of Buccolieri et al. 2015.
+- `data/validation/v10_candidate_evidence.csv` proposes candidate E063-E066 rows for later activation after hypothesis-link scoring.
+
+These candidates are intentionally excluded from the canonical aggregation until their link roles, dependency groups, and support/opposition intervals are reviewed.
 
 ## Experimental Refinements
 

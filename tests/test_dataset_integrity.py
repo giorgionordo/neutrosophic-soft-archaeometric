@@ -58,6 +58,19 @@ class DatasetIntegrityTest(unittest.TestCase):
         self.assertIn("M-GETTY-GUIDELINES", body)
         self.assertIn("DOWNLOADED-VERIFIED-PDF", body)
 
+    def test_s06_patina_audit_and_candidates_present(self):
+        audit = ROOT / "data" / "validation" / "s06_patina_page_audit.csv"
+        candidates = ROOT / "data" / "validation" / "v10_candidate_evidence.csv"
+        self.assertTrue(audit.exists())
+        self.assertTrue(candidates.exists())
+        audit_rows = [line for line in audit.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
+        candidate_rows = [line for line in candidates.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
+        self.assertEqual(len(audit_rows) - 1, 7)
+        self.assertEqual(len(candidate_rows) - 1, 4)
+        candidate_body = "\n".join(candidate_rows[1:])
+        self.assertIn("E065-CANDIDATE", candidate_body)
+        self.assertIn("DIRECTIONAL+LIMITATION", candidate_body)
+        self.assertIn("Reason_Not_Canonical_Yet", candidate_rows[0])
+
 if __name__ == "__main__":
     unittest.main()
-

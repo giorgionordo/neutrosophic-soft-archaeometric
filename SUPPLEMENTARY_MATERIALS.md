@@ -62,3 +62,8 @@ results reported in Paper I.
 ## V10 Source-Material Triage
 
 - `data/validation/v10_source_material_triage.csv` maps the locally recovered `materiale/` sources to conservative next-step dataset actions. It is intentionally non-canonical and does not alter the 62 evidence records or 112 active links used in the current manuscript results.
+
+## S06 Patina Audit and Candidate Evidence
+
+- `data/validation/s06_patina_page_audit.csv` records a page-level audit of Buccolieri et al. 2015, focused on patina composition, corrosion indicators, restoration residues and A/B surface-patina discrimination.
+- `data/validation/v10_candidate_evidence.csv` lists candidate E063-E066 rows. These rows are not part of the canonical aggregation until their IVN link scores and roles are explicitly assigned.
