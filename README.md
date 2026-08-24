@@ -61,14 +61,31 @@ the original dataset versions remain intact.
 ## Experimental Refinements
 
 `src/riace_ivn/experimental_refinements.py` contains optional, non-baseline
-helpers for later methodological development:
+helpers for later methodological development. The experimental CSV schema is:
+
+`evidence_id, bronze, meta_family, level, dependency_DAG, r_scores, m_scores, a_scores, d_scores, s_scores, o_scores, role`
+
+Score cells contain comma-separated Delphi panel scores, for example
+`"3,3,2"`. The `dependency_DAG` cell stores incoming lineage edges in compact
+form, for example `E001:0.35;E004:0.20`, where each number is the beta reuse
+weight for genealogic discounting.
 
 - Delphi consensus intervals from panel scores such as `"3,3,2"`.
 - Algebraic data-lineage novelty discounting.
 - Interval-valued neutrosophic entropy weights.
 - IVN TOPSIS ranking against positive/negative ideal states.
-- Monte Carlo perturbation of Delphi score rows.
+- Monte Carlo perturbation of the full Delphi -> DAG -> entropy -> TOPSIS
+  chain.
+
+Run the template example with:
+
+```powershell
+python scripts/run_experimental_refinements.py --input data/examples/delphi_refinement_template.csv --output-dir data/tmp/v10_example --iterations 100 --seed 20260824
+```
 
 These functions do not alter the canonical V7/V9 reproduction. They are
 provided so that future Delphi, entropy-weighting, TOPSIS and Monte Carlo
 experiments can be developed without changing the paper's current baseline.
+By default, the experimental aggregation ranks only DIRECTIONAL rows; CONTEXT
+and LIMITATION rows remain visible in the evidence-level export and can be
+included explicitly with `--include-nondirectional`.

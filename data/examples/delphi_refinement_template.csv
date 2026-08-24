@@ -1,0 +1,7 @@
+evidence_id,bronze,meta_family,level,dependency_DAG,r_scores,m_scores,a_scores,d_scores,s_scores,o_scores,role
+EX001,A,chronology,primary,,"4,4,3","3,3,3","3,3,2","3,3,3","3,3,3","1,1,0",DIRECTIONAL
+EX002,A,chronology,reanalysis,EX001:0.35,"3,3,3","3,3,2","3,2,2","2,2,3","3,3,2","1,1,1",DIRECTIONAL
+EX003,A,core_geochemistry,primary,,"4,4,4","4,4,3","3,3,3","4,3,4","4,4,3","0,0,1",DIRECTIONAL
+EX004,B,chronology,primary,,"3,3,2","3,3,3","3,2,2","3,3,2","2,2,3","2,2,1",DIRECTIONAL
+EX005,B,core_geochemistry,primary,,"4,4,3","3,3,3","3,2,3","4,4,3","2,2,2","3,3,2",DIRECTIONAL
+EX006,B,restoration,limitation,EX005:0.25,"3,3,2","2,2,2","2,2,1","2,2,2","1,1,1","3,3,2",LIMITATION

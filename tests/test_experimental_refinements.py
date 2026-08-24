@@ -7,12 +7,17 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from riace_ivn.experimental_refinements import (
     IVNState,
+    aggregate_experimental_pipeline,
     apply_novelty_discount,
     delphi_interval,
+    delphi_states_from_frame,
     entropy_weights,
     epistemic_novelty,
     ivn_distance,
     monte_carlo_delphi_intervals,
+    monte_carlo_experimental_pipeline,
+    parse_dependency_dag_cell,
+    read_experimental_csv,
     topsis_rank,
 )
 
@@ -58,6 +63,33 @@ class ExperimentalRefinementsTest(unittest.TestCase):
         samples = monte_carlo_delphi_intervals(row, iterations=5, seed=123)
         self.assertEqual(len(samples), 5)
         self.assertIn("s_high", samples.columns)
+
+    def test_parse_dependency_dag_cell_accepts_compact_edges(self):
+        edges = parse_dependency_dag_cell("E3", "E1:0.25; E2=0.50; E0->E3:0.10")
+        self.assertEqual(edges, [("E1", "E3", 0.25), ("E2", "E3", 0.5), ("E0", "E3", 0.1)])
+
+    def test_experimental_pipeline_runs_from_template(self):
+        path = ROOT / "data" / "examples" / "delphi_refinement_template.csv"
+        frame = read_experimental_csv(path)
+        outputs = aggregate_experimental_pipeline(frame, group_by="bronze")
+        self.assertEqual(set(outputs), {"evidence_states", "meta_family_states", "entropy_weights", "topsis_ranking"})
+        self.assertEqual(len(outputs["evidence_states"]), 6)
+        self.assertEqual(set(outputs["topsis_ranking"]["bronze"]), {"A", "B"})
+        self.assertAlmostEqual(outputs["entropy_weights"].groupby("bronze")["entropy_weight"].sum().loc["A"], 1.0)
+
+    def test_genealogic_discount_lowers_reanalysis_quality(self):
+        path = ROOT / "data" / "examples" / "delphi_refinement_template.csv"
+        states = delphi_states_from_frame(read_experimental_csv(path))
+        row = states[states["evidence_id"] == "EX002"].iloc[0]
+        self.assertLess(row["Q_discounted_high"], row["Q_high"])
+        self.assertAlmostEqual(row["eta"], 0.65)
+
+    def test_monte_carlo_pipeline_returns_rc_and_confidence(self):
+        path = ROOT / "data" / "examples" / "delphi_refinement_template.csv"
+        frame = read_experimental_csv(path)
+        outputs = monte_carlo_experimental_pipeline(frame, iterations=3, seed=42, group_by="bronze")
+        self.assertEqual(len(outputs["rc_samples"]), 6)
+        self.assertIn("A>B", set(outputs["pairwise_confidence"]["comparison"]))
 
 
 if __name__ == "__main__":
