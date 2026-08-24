@@ -67,3 +67,5 @@ results reported in Paper I.
 
 - `data/validation/s06_patina_page_audit.csv` records a page-level audit of Buccolieri et al. 2015, focused on patina composition, corrosion indicators, restoration residues and A/B surface-patina discrimination.
 - `data/validation/v10_candidate_evidence.csv` lists candidate E063-E066 rows. These rows are not part of the canonical aggregation until their IVN link scores and roles are explicitly assigned.
+- `data/validation/v10_candidate_link_scoring.csv` assigns provisional non-canonical H20 links and IVN score intervals to E063-E066.
+- `scripts/run_candidate_impact.py` compares the canonical H20 aggregation with the non-canonical S06 candidate scenario and writes ignored scratch outputs under `data/tmp/v10_candidate_s06/`.

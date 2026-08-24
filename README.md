@@ -112,6 +112,20 @@ The S06 patina audit is split into two non-canonical validation files:
 
 These candidates are intentionally excluded from the canonical aggregation until their link roles, dependency groups, and support/opposition intervals are reviewed.
 
+Candidate link scores for a first H20 scenario are stored in
+`data/validation/v10_candidate_link_scoring.csv`. They can be evaluated without
+altering canonical outputs with:
+
+```powershell
+python scripts/run_candidate_impact.py
+```
+
+The script writes ignored scratch outputs under
+`data/tmp/v10_candidate_s06/`. In the current S06 scenario, adding candidate
+patina links keeps H20 support stable but increases structured
+indeterminacy, because the same surface chemistry supports a multi-phase
+alteration history while also limiting direct depositional interpretation.
+
 ## Experimental Refinements
 
 `src/riace_ivn/experimental_refinements.py` contains optional, non-baseline
