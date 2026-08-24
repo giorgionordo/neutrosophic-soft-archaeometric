@@ -27,3 +27,6 @@
   and S07 PDFs, completing the staged audit of all 62 evidence records.
 - Added `scripts/generate_figures.py` and reproducible vector PDF figures for
   the H21/H33 IVN profile and weight-sensitivity comparison.
+- Added `reproduce.ps1` as a one-command verification and figure-copy workflow.
+- Added `SUPPLEMENTARY_MATERIALS.md` to index canonical data, validation
+  audits, generated figures and non-baseline experimental files.

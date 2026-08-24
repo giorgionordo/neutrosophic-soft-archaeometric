@@ -57,6 +57,21 @@ The generated vector PDFs are written to `figures/`:
 - `h21_h33_weight_sensitivity.pdf` reports the H21/H33 net midpoint under
   the domain-weight sensitivity scenarios.
 
+Run the standard reproduction workflow from this repository root:
+
+```powershell
+.\reproduce.ps1
+```
+
+This verifies the canonical counts and formulas, runs the test suite,
+regenerates the figure PDFs, and copies them to the manuscript-level
+`figures/` folder. Add `-CompileLatex` to compile the manuscript PDF as part
+of the same workflow, or `-ExportWorkbook` when the workbook source has been
+changed intentionally and the canonical CSVs must be refreshed.
+
+See `SUPPLEMENTARY_MATERIALS.md` for the dataset, validation, figure and
+experimental-file index.
+
 ## Validation Notes
 
 `data/validation/e001_e015_source_audit.csv` records the first source audit
