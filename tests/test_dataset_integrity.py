@@ -27,6 +27,12 @@ class DatasetIntegrityTest(unittest.TestCase):
         rows = audited.read_text(encoding="utf-8").splitlines()
         self.assertEqual(len(rows) - 1, 15)
 
+    def test_e016_e030_source_audit_present(self):
+        audited = ROOT / "data" / "validation" / "e016_e030_source_audit.csv"
+        self.assertTrue(audited.exists())
+        rows = audited.read_text(encoding="utf-8").splitlines()
+        self.assertEqual(len(rows) - 1, 15)
+
 
 if __name__ == "__main__":
     unittest.main()

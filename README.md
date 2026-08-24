@@ -51,5 +51,24 @@ pass for E001-E015. E001-E012 were checked against Lombardi and Vidale 1998
 (casting cores); E013-E015 were checked against Calcagnile et al. 2010
 (preliminary AMS radiocarbon study).
 
+`data/validation/e016_e030_source_audit.csv` records the second source audit
+pass. E016-E019 were checked against Calcagnile et al. 2010; E020-E030 were
+checked against Quarta, Calcagnile and Vidale 2012.
+
 The validation file is intentionally separate from the historical workbook so
 the original dataset versions remain intact.
+
+## Experimental Refinements
+
+`src/riace_ivn/experimental_refinements.py` contains optional, non-baseline
+helpers for later methodological development:
+
+- Delphi consensus intervals from panel scores such as `"3,3,2"`.
+- Algebraic data-lineage novelty discounting.
+- Interval-valued neutrosophic entropy weights.
+- IVN TOPSIS ranking against positive/negative ideal states.
+- Monte Carlo perturbation of Delphi score rows.
+
+These functions do not alter the canonical V7/V9 reproduction. They are
+provided so that future Delphi, entropy-weighting, TOPSIS and Monte Carlo
+experiments can be developed without changing the paper's current baseline.
