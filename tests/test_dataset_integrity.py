@@ -40,6 +40,13 @@ class DatasetIntegrityTest(unittest.TestCase):
         self.assertEqual(len(rows) - 1, 15)
         self.assertTrue(any("SOURCE-CHECKED-ABSTRACT-ONLY" in row for row in rows))
 
+    def test_e046_e062_source_audit_present(self):
+        audited = ROOT / "data" / "validation" / "e046_e062_source_audit.csv"
+        self.assertTrue(audited.exists())
+        rows = audited.read_text(encoding="utf-8").splitlines()
+        self.assertEqual(len(rows) - 1, 17)
+        self.assertTrue(any("SOURCE-CHECKED-ABSTRACT-ONLY" in row for row in rows))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -61,6 +61,12 @@ E033-E042 were checked against Jones et al. 2016; E043-E045 were checked
 against the Angelini et al. Getty abstract and are therefore marked
 `SOURCE-CHECKED-ABSTRACT-ONLY`.
 
+`data/validation/e046_e062_source_audit.csv` records the fourth source audit
+pass. E046 was checked against the Angelini et al. Getty abstract; E047 against
+Buccolieri et al. 2015; E048-E050, E052 and E057-E062 against Cirrincione et
+al. 2026; E051 and E053-E055 against Jones et al. 2016; and E056 against
+Calcagnile et al. 2010.
+
 The validation file is intentionally separate from the historical workbook so
 the original dataset versions remain intact.
 

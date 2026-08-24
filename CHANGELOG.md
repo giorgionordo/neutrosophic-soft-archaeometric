@@ -23,3 +23,5 @@
   Monte Carlo confidence tables.
 - Added source validation notes for E031-E045 against the S03, S04 and S05
   PDFs, including explicit abstract-only status for E043-E045.
+- Added source validation notes for E046-E062 against the S02, S04, S05, S06
+  and S07 PDFs, completing the staged audit of all 62 evidence records.
