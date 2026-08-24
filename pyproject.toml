@@ -1,0 +1,14 @@
+[project]
+name = "neutrosophic-soft-archaeometric"
+version = "0.1.0"
+description = "Reproducible IVN soft evidence aggregation for the Riace Bronzes Paper I case study."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "openpyxl",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

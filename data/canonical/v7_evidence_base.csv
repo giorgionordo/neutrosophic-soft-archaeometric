@@ -1,0 +1,63 @@
+Evidence_ID,Source_ID,Evidence_Family,Revised_Dependency_Group,R_Class,M_Class,D_Class,R_low,R_high,M_low,M_high,D_low,D_high,Base_coding_rationale,Status
+E001,S01,FAM-CORE-1998,DG-S01-A-BULK,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E002,S01,FAM-CORE-1998,DG-S01-B-BULK,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E003,S01,FAM-CORE-1998,DG-S01-CORE-COMP,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E004,S01,FAM-CORE-1998,DG-S01-B-TECH,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E005,S01,FAM-CORE-1998,DG-S01-ORGANICS,VH,H,L0/L1,0.9,1.0,0.75,0.9,0.85,0.97,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E006,S01,FAM-CORE-1998,DG-S01-CORE-COMP,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E007,S01,FAM-CORE-1998,DG-S01-B-PALEO,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E008,S01,FAM-CORE-1998,DG-S01-A-PALEO,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E009,S01,FAM-CORE-1998,DG-S01-CORE-COMP,VH,M,L2,0.9,1.0,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E010,S01,FAM-CORE-1998,DG-S01-PROV,VH,M,L2,0.9,1.0,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E011,S01,FAM-CORE-1998,DG-S01-PROV,VH,M,L2,0.9,1.0,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E012,S01,FAM-CORE-1998,DG-S01-CORE-COMP,VH,M,L2,0.9,1.0,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E013,S02,FAM-C14-CEDAD,DG-C14-BASIS,VH,H,L0,0.9,1.0,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E014,S02,FAM-C14-CEDAD,DG-C14-A-2010,VH,H,L0,0.9,1.0,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E015,S02,FAM-C14-CEDAD,DG-C14-B-2010,VH,H,L0,0.9,1.0,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E016,S02,FAM-C14-CEDAD,DG-C14-A-2010,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E017,S02,FAM-C14-CEDAD,DG-C14-A-2010,VH,VH,L1,0.9,1.0,0.9,1.0,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E018,S02,FAM-C14-CEDAD,DG-C14-B-2010,VH,VH,L1,0.9,1.0,0.9,1.0,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E019,S02,FAM-C14-CEDAD,DG-C14-INTERP-2010,VH,H,L2,0.9,1.0,0.75,0.9,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E020,S03,FAM-C14-CEDAD,DG-C14-2012-BASIS,VH,H,L0,0.9,1.0,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E021,S03,FAM-C14-CEDAD,DG-C14-B-RIGHTARM,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E022,S03,FAM-C14-CEDAD,DG-C14-A-2012,VH,VH,L1,0.9,1.0,0.9,1.0,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E023,S03,FAM-C14-CEDAD,DG-C14-B-2012,VH,VH,L1,0.9,1.0,0.9,1.0,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E024,S03,FAM-C14-CEDAD,DG-C14-RELATIVE,VH,H,L1/L2,0.9,1.0,0.75,0.9,0.65,0.85,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E025,S03,FAM-IBA-2012,DG-IBA-FEATURES,VH,H,L0,0.9,1.0,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E026,S03,FAM-IBA-2012,DG-IBA-FEATURES,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E027,S03,FAM-IBA-2012,DG-IBA-CORE-COMP,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E028,S03,FAM-IBA-2012,DG-IBA-CORE-COMP,VH,H,L0/L1,0.9,1.0,0.75,0.9,0.85,0.97,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E029,S03,FAM-IBA-2012,DG-IBA-CORE-COMP,VH,H,L0/L1,0.9,1.0,0.75,0.9,0.85,0.97,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E030,S03,FAM-IBA-2012,DG-IBA-B-RIGHTARM,VH,H,L1,0.9,1.0,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E031,S03,FAM-IBA-2012,DG-IBA-B-RIGHTARM,VH,H,L0/L1,0.9,1.0,0.75,0.9,0.85,0.97,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E032,S03,FAM-IBA-2012,DG-IBA-B-RIGHTARM,VH,VH,L1,0.9,1.0,0.9,1.0,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E033,S04,FAM-CORE-2016,DG-J16-SAMPLES,H,H,L0,0.75,0.9,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E034,S04,FAM-CORE-2016,DG-J16-CORE-COMP,H,H,L1,0.75,0.9,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E035,S04,FAM-CORE-2016,DG-J16-A-WELD,H,H,L1,0.75,0.9,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E036,S04,FAM-CORE-2016,DG-J16-B-RIGHTARM,H,H,L1,0.75,0.9,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E037,S04,FAM-CORE-2016,DG-J16-CORE-COMP,H,M,L2,0.75,0.9,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E038,S04,FAM-CORE-2016,DG-J16-SHERDS,H,H,L1,0.75,0.9,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E039,S04,FAM-CORE-2016,DG-J16-PROV,H,M,L2,0.75,0.9,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E040,S04,FAM-CORE-2016,DG-J16-PROV,H,M,L2,0.75,0.9,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E041,S04,FAM-CORE-2016,DG-J16-PROV,H,M,L2,0.75,0.9,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E042,S04,FAM-CORE-2016,DG-J16-PROV,H,M,L2,0.75,0.9,0.55,0.75,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E043,S05,FAM-METAL-ISOTOPES,DG-METAL-SAMPLES,M,H,L0,0.55,0.75,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E044,S05,FAM-METAL-ISOTOPES,DG-METAL-CU,M,H,L1/L2,0.55,0.75,0.75,0.9,0.65,0.85,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E045,S05,FAM-METAL-ISOTOPES,DG-METAL-B-WELD,M,H,L1/L2,0.55,0.75,0.75,0.9,0.65,0.85,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E046,S05,FAM-METAL-ISOTOPES,DG-METAL-TENON,M,H,L1/L2,0.55,0.75,0.75,0.9,0.65,0.85,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E047,S06,FAM-PATINA,DG-PATINA-EDXRF,VH,H,L0,0.9,1.0,0.75,0.9,0.9,1.0,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E048,S07,FAM-SYRACUSE-2026,DG-S07-CIANE-A,H,H,L1,0.75,0.9,0.75,0.9,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E049,S07,FAM-SYRACUSE-2026,DG-S07-CIANE-B,H,M,L1,0.75,0.9,0.55,0.75,0.8,0.95,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E050,S07,FAM-PATINA,DG-S07-DEPOSITION,H,M,L2/L3,0.75,0.9,0.55,0.75,0.4,0.65,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E051,S04,FAM-CORE-2016,DG-J16-PROV-LIMIT,H,H,L2,0.75,0.9,0.75,0.9,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E052,S07,FAM-SYRACUSE-2026,DG-S07-CIANE-B-LIMIT,H,H,L2,0.75,0.9,0.75,0.9,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E053,S04,FAM-CORE-2016,DG-J16-PROV-LIMIT-GENERAL,H,H,L2,0.75,0.9,0.75,0.9,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E054,S04,FAM-CORE-2016,DG-J16-ARGOS-SEM,H,H,L1/L2,0.75,0.9,0.75,0.9,0.65,0.85,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E055,S04,FAM-CORE-2016,DG-J16-ARGOS-COMP,H,M,L1/L2,0.75,0.9,0.55,0.75,0.65,0.85,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E056,S02,FAM-C14-CEDAD,DG-C14-INTERP-2010,VH,H,L2,0.9,1.0,0.75,0.9,0.55,0.75,Inherited from V6 validated evidence-level coding.,V7-INHERITED
+E057,S07,FAM-SYRACUSE-2026,DG-S07-SIBARI-COMP,H,M,L2,0.75,0.9,0.55,0.75,0.55,0.75,2026 peer-reviewed literature/geological synthesis; broad Sibari correspondence claim.,V7-SOURCE-CHECKED
+E058,S07,FAM-SYRACUSE-2026,DG-S07-SIBARI-B,H,M,L2/L3,0.75,0.9,0.55,0.75,0.4,0.65,2026 peer-reviewed source-level interpretive conclusion for B/Sibari.,V7-SOURCE-CHECKED
+E059,S07,FAM-SYRACUSE-2026,DG-S07-SIBARI-A,H,M,L2/L3,0.75,0.9,0.55,0.75,0.4,0.65,2026 peer-reviewed source-level statement retaining Sibari as a possible A source.,V7-SOURCE-CHECKED
+E060,S07,FAM-SYRACUSE-2026,DG-S07-A-PROV-LIMIT,H,M,L2/L3,0.75,0.9,0.55,0.75,0.4,0.65,2026 explicit A-specific provenance limitation.,V7-SOURCE-CHECKED
+E061,S07,FAM-SYRACUSE-2026,DG-S07-A-ARGOS-VALID,H,M,L2/L3,0.75,0.9,0.55,0.75,0.4,0.65,2026 statement retaining Argos/Peloponnese as viable for A.,V7-SOURCE-CHECKED
+E062,S07,FAM-SYRACUSE-2026,DG-S07-SIBARI-COMPARATOR-LIMIT,H,M,L2,0.75,0.9,0.55,0.75,0.55,0.75,2026 geological critique of applying southern-Calabria comparators to the Sibari plain.,V7-SOURCE-CHECKED
