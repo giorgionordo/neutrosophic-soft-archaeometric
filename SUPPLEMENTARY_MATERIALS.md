@@ -1,8 +1,8 @@
 # Supplementary Materials Index
 
-This repository contains the reproducible computational package for the manuscript.
+This repository contains the reproducible computational package for the paper.
 The paper remains non-topological and uses the source-aware interval-valued
-neutrosophic soft baseline described in the manuscript.
+neutrosophic soft baseline described in the paper.
 
 ## Canonical Data
 
@@ -33,13 +33,13 @@ abstract-only.
 ## Reproduction Scripts
 
 - `scripts/verify_results.py`: verifies counts, link formulas, V7 aggregation,
-  V9 synthesis and the rounded manuscript values.
+  V9 synthesis and the rounded paper values.
 - `scripts/generate_figures.py`: regenerates the vector PDF figures used by
-  the manuscript.
+  the paper.
 - `scripts/export_from_workbook.py`: re-exports canonical CSVs from the
   workbook source when needed.
 - `reproduce.ps1`: runs the standard reproduction workflow and copies the
-  generated figures to the manuscript-level `figures/` directory.
+  generated figures to the paper-level `figures/` directory.
 
 ## Figures
 
@@ -57,11 +57,11 @@ edited manually.
 
 These files support optional Delphi, lineage-discounting, entropy-weighting,
 IVN TOPSIS and Monte Carlo experiments. They do not alter the baseline V7/V9
-results reported in the manuscript.
+results reported in the paper.
 
 ## V10 Source-Material Triage
 
-- `data/validation/v10_source_material_triage.csv` maps the locally recovered `materiale/` sources to conservative next-step dataset actions. It is intentionally non-canonical and does not alter the 62 evidence records or 112 active links used in the current manuscript results.
+- `data/validation/v10_source_material_triage.csv` maps the locally recovered `materiale/` sources to conservative candidate dataset actions. It is intentionally non-canonical and does not alter the 62 evidence records or 112 active links used in the current paper results.
 
 ## S06 Patina Audit and Candidate Evidence
 

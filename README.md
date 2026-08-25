@@ -3,10 +3,10 @@
 Reproducible Python support for the Riace Bronzes source-aware
 interval-valued neutrosophic soft framework.
 
-The repository follows the manuscript's non-topological scope. It validates the
+The repository follows the paper's non-topological scope. It validates the
 sparse Evidence x Hypothesis layer, role-aware DIRECTIONAL/CONTEXT/LIMITATION
 coding, dependency groups, evidence families, hierarchical aggregation, and the
-second-order H21/H33 synthesis used in the LaTeX manuscript.
+second-order H21/H33 synthesis used in the LaTeX paper.
 
 ## Current Canonical Dataset
 
@@ -37,14 +37,14 @@ Export the canonical CSVs from the workbook:
 python scripts/export_from_workbook.py --workbook "C:\Users\Giorgio\Desktop\neutrosophic_archaeometric\datasets\Riace_Bronzes_Evidence_Dataset_v9_H21_synthesis.xlsx"
 ```
 
-Verify formulas, aggregation, counts, and H21/H33 manuscript numbers:
+Verify formulas, aggregation, counts, and H21/H33 paper numbers:
 
 ```powershell
 python scripts/verify_results.py --latex "C:\Users\Giorgio\Desktop\neutrosophic_archaeometric\neutrosophic_soft_archeometric.tex"
 python -m unittest discover -s tests
 ```
 
-Generate the manuscript figures from the canonical CSV outputs:
+Generate the paper figures from the canonical CSV outputs:
 
 ```powershell
 python scripts/generate_figures.py
@@ -64,8 +64,8 @@ Run the standard reproduction workflow from this repository root:
 ```
 
 This verifies the canonical counts and formulas, runs the test suite,
-regenerates the figure PDFs, and copies them to the manuscript-level
-`figures/` folder. Add `-CompileLatex` to compile the manuscript PDF as part
+regenerates the figure PDFs, and copies them to the paper-level
+`figures/` folder. Add `-CompileLatex` to compile the paper PDF as part
 of the same workflow, or `-ExportWorkbook` when the workbook source has been
 changed intentionally and the canonical CSVs must be refreshed.
 
@@ -100,7 +100,7 @@ the original dataset versions remain intact.
 
 ## Material Accession and V10 Source Triage
 
-The manuscript-level folder `C:\Users\Giorgio\Desktop\neutrosophic_archaeometric\materiale` stores locally recovered PDFs, HTML records, and download manifests. Large or copyrighted source PDFs are not versioned in this repository.
+The paper-level folder `C:\Users\Giorgio\Desktop\neutrosophic_archaeometric\materiale` stores locally recovered PDFs, HTML records, and download manifests. Large or copyrighted source PDFs are not versioned in this repository.
 
 `data/validation/v10_source_material_triage.csv` records the conservative bridge from the local material folder to the candidate dataset expansion. It identifies which sources are already active in the 62-evidence canonical matrix, which newly downloaded files can support page-level audit, and which records remain bibliographic/manual recovery targets only.
 
@@ -153,7 +153,7 @@ python scripts/run_experimental_refinements.py --input data/examples/delphi_refi
 
 These functions do not alter the canonical V7/V9 reproduction. They are
 provided so that Delphi, entropy-weighting, TOPSIS and Monte Carlo
-experiments can be run without changing the manuscript's current baseline.
+experiments can be run without changing the paper's current baseline.
 By default, the experimental aggregation ranks only DIRECTIONAL rows; CONTEXT
 and LIMITATION rows remain visible in the evidence-level export and can be
 included explicitly with `--include-nondirectional`.
