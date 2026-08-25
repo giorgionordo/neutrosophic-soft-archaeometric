@@ -97,7 +97,7 @@ def make_ivn_profile(tables: dict[str, pd.DataFrame], out_path: Path) -> None:
     style = PdfStyle()
     df = tables["v9_synthesis_results"].set_index("Hypothesis_ID")
     pdf = SimplePdf(out_path)
-    left, width = 116, 350
+    left, width = 132, 334
     pdf.text(30, 315, "H21/H33 interval-valued neutrosophic profile", 13, style.stroke)
     draw_axis(pdf, left, 52, width, style)
 
