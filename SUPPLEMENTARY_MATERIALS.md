@@ -1,6 +1,6 @@
 # Supplementary Materials Index
 
-This repository contains the reproducible computational package for Paper I.
+This repository contains the reproducible computational package for the manuscript.
 The paper remains non-topological and uses the source-aware interval-valued
 neutrosophic soft baseline described in the manuscript.
 
@@ -55,9 +55,9 @@ edited manually.
 - `scripts/run_experimental_refinements.py`
 - `data/examples/delphi_refinement_template.csv`
 
-These files support future Delphi, lineage-discounting, entropy-weighting,
+These files support optional Delphi, lineage-discounting, entropy-weighting,
 IVN TOPSIS and Monte Carlo experiments. They do not alter the baseline V7/V9
-results reported in Paper I.
+results reported in the manuscript.
 
 ## V10 Source-Material Triage
 
@@ -69,3 +69,4 @@ results reported in Paper I.
 - `data/validation/v10_candidate_evidence.csv` lists candidate E063-E066 rows. These rows are not part of the canonical aggregation until their IVN link scores and roles are explicitly assigned.
 - `data/validation/v10_candidate_link_scoring.csv` assigns provisional non-canonical H20 links and IVN score intervals to E063-E066.
 - `scripts/run_candidate_impact.py` compares the canonical H20 aggregation with the non-canonical S06 candidate scenario and writes ignored scratch outputs under `data/tmp/v10_candidate_s06/`.
+

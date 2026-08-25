@@ -1,9 +1,9 @@
 # neutrosophic-soft-archaeometric
 
-Reproducible Python support for Paper I of the Riace Bronzes
-source-aware interval-valued neutrosophic soft framework.
+Reproducible Python support for the Riace Bronzes source-aware
+interval-valued neutrosophic soft framework.
 
-The repository intentionally keeps Paper I non-topological. It validates the
+The repository follows the manuscript's non-topological scope. It validates the
 sparse Evidence x Hypothesis layer, role-aware DIRECTIONAL/CONTEXT/LIMITATION
 coding, dependency groups, evidence families, hierarchical aggregation, and the
 second-order H21/H33 synthesis used in the LaTeX manuscript.
@@ -102,13 +102,13 @@ the original dataset versions remain intact.
 
 The manuscript-level folder `C:\Users\Giorgio\Desktop\neutrosophic_archaeometric\materiale` stores locally recovered PDFs, HTML records, and download manifests. Large or copyrighted source PDFs are not versioned in this repository.
 
-`data/validation/v10_source_material_triage.csv` records the conservative bridge from the local material folder to the next possible dataset expansion. It identifies which sources are already active in the 62-evidence canonical matrix, which newly downloaded files can support further page-level audit, and which records remain bibliographic/manual recovery targets only.
+`data/validation/v10_source_material_triage.csv` records the conservative bridge from the local material folder to the candidate dataset expansion. It identifies which sources are already active in the 62-evidence canonical matrix, which newly downloaded files can support page-level audit, and which records remain bibliographic/manual recovery targets only.
 
-The v10 triage does not change the canonical 62 evidence records or 112 active links. It is a staging file for future source-checked additions, especially patina chemistry, restoration history, and carefully separated geological measurement versus historical synthesis.
+The v10 triage does not change the canonical 62 evidence records or 112 active links. It is a staging file for source-checked additions, especially patina chemistry, restoration history, and carefully separated geological measurement versus historical synthesis.
 The S06 patina audit is split into two non-canonical validation files:
 
 - `data/validation/s06_patina_page_audit.csv` records page-level checks of Buccolieri et al. 2015.
-- `data/validation/v10_candidate_evidence.csv` proposes candidate E063-E066 rows for later activation after hypothesis-link scoring.
+- `data/validation/v10_candidate_evidence.csv` proposes candidate E063-E066 rows for optional activation after hypothesis-link scoring.
 
 These candidates are intentionally excluded from the canonical aggregation until their link roles, dependency groups, and support/opposition intervals are reviewed.
 
@@ -129,7 +129,7 @@ alteration history while also limiting direct depositional interpretation.
 ## Experimental Refinements
 
 `src/riace_ivn/experimental_refinements.py` contains optional, non-baseline
-helpers for later methodological development. The experimental CSV schema is:
+helpers for optional methodological experiments. The experimental CSV schema is:
 
 `evidence_id, bronze, meta_family, level, dependency_DAG, r_scores, m_scores, a_scores, d_scores, s_scores, o_scores, role`
 
@@ -152,8 +152,8 @@ python scripts/run_experimental_refinements.py --input data/examples/delphi_refi
 ```
 
 These functions do not alter the canonical V7/V9 reproduction. They are
-provided so that future Delphi, entropy-weighting, TOPSIS and Monte Carlo
-experiments can be developed without changing the paper's current baseline.
+provided so that Delphi, entropy-weighting, TOPSIS and Monte Carlo
+experiments can be run without changing the manuscript's current baseline.
 By default, the experimental aggregation ranks only DIRECTIONAL rows; CONTEXT
 and LIMITATION rows remain visible in the evidence-level export and can be
 included explicitly with `--include-nondirectional`.
